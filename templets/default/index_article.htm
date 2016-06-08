@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>{dede:field name='typename'/} - {dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.style.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.index.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.cloudcms.css" rel="stylesheet" type="text/css">
+{dede:include filename="top.htm"/}
+<div id="box">
+	<div id="box_main">
+    	<div id="box_left">
+			<div id="box_left_info">
+            	<div id="box_left_info_main">
+                	<div id="box_left_info_main_h2"><strong>【{dede:field name='typename'/}】</strong></div>
+                    <div id="box_left_info_main_ul">
+                    	{dede:field.content/}
+                    </div>
+                </div>
+                <div id="box_left_info_plug">
+                	<div id="box_left_info_plug_copy">
+                    	版权所有 还有谁博客 转载时必须以连接形式注明作者和原始出处<br><a href="http://www.haiyoushei.net">[ http://www.haiyoushei.net ]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box_right">
+        	{dede:include filename="list_right.htm"/}
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>{dede:field.title/} - {dede:field name='typename'/} - {dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.style.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.index.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_basehost/}/styles/www.haiyoushei.net.cloudcms.css" rel="stylesheet" type="text/css">
+{dede:include filename="top.htm"/}
+<div id="box">
+	<div id="box_main">
+    	<div id="box_left">
+			<div id="box_left_info">
+            	<div id="box_left_info_main">
+                	<div id="box_left_info_main_h2"><strong>【{dede:field name='typename'/}】{dede:field.title/}</strong><span>栏目：<a>{dede:field name='typename'/}</a></span><span>作者：<a>{dede:field.writer/}</a></span><span><a>{dede:field.pubdate function="MyDate('Y/m/d',@me)"/}</a></span><span>浏览：<a><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>次</a></span><span><a href="http://shang.qq.com/wpa/qunwpa?idkey=d8680fde5c4abe6d25481bf782a5793556f56ee71867e7ef05d9c76964cc576b" title="网站建设程序员交流群" target="_blank">QQ交流群：91695509</a></span></div>
+                    <div id="box_left_info_main_ul">
+                    	{dede:field.body/}
+                    </div>
+                </div>
+                <div id="box_left_info_plug">
+                	<div id="box_left_info_plug_copy">
+                    	版权所有 还有谁博客 转载时必须以连接形式注明作者和原始出处<br><a href="{dede:global.cfg_basehost/}{dede:field name='arcurl'/}">[ {dede:global.cfg_basehost/}{dede:field name='arcurl'/} ]</a>
+                    </div>
+                	<div id="box_left_info_plug_page">
+                    	<ul>
+                        	<li>{dede:prenext get='pre'/}</li>
+                            <li>{dede:prenext get='next'/}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box_right">
+        	{dede:include filename="right.htm"/}
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}

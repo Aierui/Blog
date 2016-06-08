@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>”—«È¡¥Ω” - <?php echo $cfg_webname;?></title>
+<link href="../styles/www.haiyoushei.net.style.css" rel="stylesheet" type="text/css">
+<link href="../styles/www.haiyoushei.net.index.css" rel="stylesheet" type="text/css">
+<link href="../styles/www.haiyoushei.net.cloudcms.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../styles/www.haiyoushei.net.js"></script>
+<?php pasterTempletDiy("default/top.htm"); ?>
+<div id="box">
+	<div id="box_main">
+    	<div id="box_left">
+			<div id="box_left_info">
+            	<div id="box_left_info_main">
+                	<div id="box_left_info_main_h2"><strong>°æ”—«È¡¥Ω”°ø</strong></div>
+                    <div id="box_left_info_main_link">
+                    	<?php
+                          $row = 180;
+                          $titlelen = 50;
+                          $dsql->SetQuery("Select * from `#@__flink` where ischeck>0 order by sortrank asc");
+                          $dsql->Execute();
+                        $revalue = "";
+                        for($i=1;$i<=$row;$i++)
+                        {
+                
+                                if($dbrow=$dsql->GetObject())
+                                {
+                                    $wtitle = cn_substr($dbrow->webname,$titlelen);
+                                    if($dbrow->logo=="")
+                                        $revalue.= "<li><a href='".$dbrow->url."' target='_blank'>$wtitle</a></li>";
+                                    else
+                                        $revalue.= "<li><a href='".$dbrow->url."' target='_blank'><img src='".$dbrow->logo."' alt='$wtitle'></a></li>";
+                                }
+                            if(!$dbrow) break;
+                        }
+                        echo  $revalue;
+                        ?>
+                        <li><a href="../plus/flink_add.php">…Í«Î”—¡¥</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box_right">
+        	<?php pasterTempletDiy("default/right.htm"); ?>
+        </div>
+    </div>
+</div>
+<?php pasterTempletDiy("default/footer.htm"); ?>

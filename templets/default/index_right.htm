@@ -1,0 +1,48 @@
+        	<div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_list">{dede:type typeid='3'}<a title="[field:typename/]">[field:typename/]</a>{/dede:type}</strong></h2>
+                <ul id="box_right_div_list_ul">
+                	{dede:arclist typeid ='3' row='5' titlelen='36' orderby='pubdate'}
+                	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+            <div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_search"><a>搜索中心</a></strong></h2>
+                <ul id="box_right_div_list_search">
+                	<form method="get" name="formsearch" action="{dede:field name='phpurl'/}/search.php">
+                        <input style="display:none;" type="hidden" name="kwtype" value="0" />
+                        <input id="box_right_div_list_search_text" name="keyword" type="text" placeholder="输入关键字搜索" maxlength="20" autocomplete="off" />
+						<button id="box_right_div_list_search_submit" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </ul>
+            </div>
+            <div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_love"><a>热门文章</a></strong></h2>
+                <ul id="box_right_div_list_ul">
+                	{dede:arclist typeid ='1,2' row='5' titlelen='36' orderby='click'}
+                	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+            <div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_tui"><a>推荐文章</a></strong></h2>
+                <ul id="box_right_div_list_ul">
+                	{dede:arclist typeid ='1,2,3' row='5' titlelen='36' flag='c' orderby='pubdate'}
+                	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+            <div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_link"><a>友情链接</a></strong><span><a href="../plus/flink.php">查看全部</a></span></h2>
+                <ul id="box_right_div_list_link">
+                	{dede:flink row='8'/}
+                    <li><a href="/plus/flink_add.php" title="申请友链" target="_blank">申请友链</a></li>
+                </ul>
+            </div>
+            <div id="box_right_div">
+            	<h2><strong id="box_right_div_h2_strong_adimg"><a>广告赞助</a></strong></h2>
+            	<ul id="box_right_div_list_adimg">
+                	<a href="http://www.haiyoushei.net" target="_blank"><img src="{dede:global.cfg_basehost/}/images/adimg_01.jpg"></a>
+                    <a href="http://www.reg.wang" target="_blank"><img src="{dede:global.cfg_basehost/}/images/adimg_02.jpg"></a>
+                </ul>
+            </div>
