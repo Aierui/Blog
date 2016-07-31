@@ -1,15 +1,15 @@
-# ÕâÊÇÒ»¸öÓÅÃÀ¡¢¼ò½é¡¢´ó·½µÄResponsiveWeb
+ï»¿# è¿™æ˜¯ä¸€ä¸ªä¼˜ç¾ã€ç®€ä»‹ã€å¤§æ–¹çš„ResponsiveWeb
 
-Ëû¿ÉÒÔ°ïÖúÄã¿ìËÙ´î½¨ºÃÊôÓÚ×Ô¼ºµÄÏìÓ¦Ê½²©¿ÍÒ³Ãæ¡£
+ä»–å¯ä»¥å¸®åŠ©ä½ å¿«é€Ÿæ­å»ºå¥½å±äºè‡ªå·±çš„å“åº”å¼åšå®¢é¡µé¢ã€‚
 
-ÍêÉÆµÄÑùÊ½ÁĞ±íÒ²¿ÉÒÔÈÃÄãÌí¼Ó¸ü¶àµÄÒ³ÃæµÃĞÄË³ÊÖ£¬Ï£ÍûÄãÄÜ¹»Ï²»¶~~Star¡£
+å®Œå–„çš„æ ·å¼åˆ—è¡¨ä¹Ÿå¯ä»¥è®©ä½ æ·»åŠ æ›´å¤šçš„é¡µé¢å¾—å¿ƒé¡ºæ‰‹ï¼Œå¸Œæœ›ä½ èƒ½å¤Ÿå–œæ¬¢~~Starã€‚
 
 [demo](http://shijinrong.cn)
 
-### Ê¹ÓÃ·½·¨
+### ä½¿ç”¨æ–¹æ³•
 - Clone this repository to local
 - run *index.html* in browser
-- next£¬go on!developing...
+- nextï¼Œgo on!developing...
 
 
 Thank you for your use, what do not understand the issue of welcome to communicate in github's issue.
